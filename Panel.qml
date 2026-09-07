@@ -617,13 +617,16 @@ Panel {
             onClicked: root.shutdownSession()
           }
 
-          // Skull icon (Font Awesome "fa-skull", U+F1CB) and the theme's
-          // urgent/danger color set this apart from the other four at a
-          // glance -- the only affordance against a mis-click, since the
-          // action itself fires with no confirmation dialog by design.
+          // Skull icon (Font Awesome "fa-skull", U+EE15 in this Nerd Font
+          // build -- verified by parsing the ttf's own post/cmap tables,
+          // since the published nerd-fonts codepoint reference didn't match
+          // this build) and the theme's urgent/danger color set this apart
+          // from the other four at a glance -- the only affordance against a
+          // mis-click, since the action itself fires with no confirmation
+          // dialog by design.
           Button {
             width: sessionActionRow.cellWidth
-            iconText: ""
+            iconText: ""
             iconSize: Style.font.title
             tooltipText: "Kill"
             foreground: root.bar.urgent
