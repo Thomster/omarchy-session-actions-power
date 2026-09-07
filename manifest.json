@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "session-actions.power",
+  "name": "Power (Session Actions)",
+  "version": "1.0.0",
+  "author": "Thomas",
+  "description": "Battery, power profile, and system stats, with Lock/Sleep/Restart/Shutdown/Kill buttons below the profile picker",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Power (Session Actions)",
+    "description": "Battery, power profile, and system stats",
+    "category": "System",
+    "allowMultiple": false
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.power"
+  }
+}
